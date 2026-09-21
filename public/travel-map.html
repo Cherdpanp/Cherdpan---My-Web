@@ -1,0 +1,22 @@
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Travel Map — Cherdpan My World</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#070b14;color:#f1f4fb;font-family:system-ui,sans-serif}a{color:inherit;text-decoration:none}.wrap{max-width:1280px;padding:0 24px;margin:auto}header{border-bottom:1px solid #26314a;padding:24px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:36px;margin:36px 0 24px}.head p{max-width:550px;color:#a4afc6;line-height:1.8}.eyebrow{color:#d7b46a;font-size:12px;letter-spacing:.15em}h2{font-size:48px;letter-spacing:-.04em;margin:10px 0}section{padding-bottom:50px}@media(max-width:800px){.head{display:block}.wrap{padding:0 16px}h2{font-size:38px}}</style><link rel="stylesheet" href="/vendor/leaflet.css"><link rel="stylesheet" href="/travel.css"><script defer src="/vendor/leaflet.js"></script><script type="module" src="/travel.js"></script></head><body><header><div class="wrap"><a href="/">← CHERDPAN — MY WORLD</a></div></header><section id="travel"><div class="wrap">
+<div class="head"><div><div class="eyebrow">02 / Travel</div><h2>World Journal</h2></div><p>บันทึกการเดินทางจากฐาน Travelling — ค้นหาทริป เลือกปี พ.ศ. และประเทศ/พื้นที่ แล้วสำรวจเมืองและสถานที่ในแต่ละการเดินทาง</p></div>
+<p id="travel-status" class="travel-status" role="status">กำลังโหลดบันทึกการเดินทาง…</p>
+<div class="travel-stats" aria-label="ภาพรวมการเดินทาง">
+<div class="travel-stat"><strong id="stat-tours">—</strong><span>รายการเดินทาง</span></div>
+<div class="travel-stat"><strong id="stat-areas">—</strong><span>ประเทศ / พื้นที่ในทริป</span></div>
+<div class="travel-stat"><strong id="stat-places">—</strong><span>สถานที่ / กิจกรรม</span></div>
+<div class="travel-stat"><strong id="stat-cities">—</strong><span>เมืองที่เชื่อมโยง</span></div>
+</div>
+<div class="travel-controls">
+<label>ค้นหาการเดินทาง<input id="travel-search" type="search" placeholder="ชื่อทริป เมือง หรือสถานที่" autocomplete="off"></label>
+<label>ปี พ.ศ.<select id="travel-year"><option value="">ทุกปี</option></select></label>
+<label>ประเทศ / พื้นที่<select id="travel-country"><option value="">ทุกประเทศ / พื้นที่</option></select></label>
+<button id="travel-reset" type="button">ล้างตัวกรอง</button>
+</div>
+<div class="travel-map-shell"><div id="travel-map" class="travel-map" aria-label="แผนที่เมืองในบันทึกการเดินทาง"></div>
+<div class="travel-map-caption"><p id="map-note">กำลังเตรียมหมุดเมือง…</p><a href="/travel-map" target="_blank" rel="noopener">เปิดแผนที่เต็มหน้า ↗</a></div></div>
+<div class="travel-results"><span id="travel-results" aria-live="polite">กำลังโหลดรายการ…</span><span>คลิกรายการเพื่อดูสถานที่และกิจกรรม</span></div>
+<div id="travel-list" class="travel-list"></div>
+<noscript><p>โปรดเปิด JavaScript เพื่อใช้งานแผนที่และตัวกรองการเดินทาง</p></noscript>
+</div></section></body></html>

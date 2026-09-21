@@ -1,0 +1,5 @@
+tests/
+scripts/
+README.md
+DEPLOY-TH.md
+.env*
